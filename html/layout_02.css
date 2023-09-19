@@ -1,0 +1,42 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: ;
+}
+
+body {}
+
+.wrap { 
+    font-size: 20px;
+    text-align: center;
+}
+
+.header {
+    background-color: #D9D9D9;
+    height: 100px;
+    line-height: 100px;
+}
+
+.contents {
+    background-color: #E6E6E6;
+    height: 624px;
+}
+
+.contents p{
+    font-weight: bold;
+    color: blue;
+    width: 740px;
+    margin: 0 auto;
+    padding-top: 260px;
+    border: 10px solid green;
+}
+
+.footer {
+    background-color: #D9D9D9;
+    height: 300px;
+    line-height: 300px;
+}
+
+
+
+
