@@ -87,12 +87,14 @@ body{
     border: 1px solid #B28C68;
     border-radius: 37px;
     color: #B28C68;
+    padding: 9 11px;
 }
 
 .header .inner .member .btn.filled {
    /* 위에 것 굳이 안 적어도 알아서 가져옴 */
    background-color: #B28C68;
    color: white;
+   padding: 9 3px;
 }
 
 .contents{
