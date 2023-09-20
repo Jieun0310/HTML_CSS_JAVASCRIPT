@@ -5,17 +5,19 @@
 }
 
 .body{
-    font-size: 20px;
+    
 }
 
 .wrap {
+    font-size: 30px;
     width: 1200px;
-    margin: 10px auto; 
+    margin: 0px auto; 
     text-align: center;
+    font-family: 'Indie Flower', cursive;
 }
 
 .header{
-    background-color: antiquewhite;
+    background-color:blanchedalmond;
     height: 80px;
     line-height: 80px;
     
@@ -23,29 +25,27 @@
 
 .contents {
     width: 1200px;
-    margin: 10px auto; 
+    margin: 20px auto; 
     text-align: center;
     line-height: 624px;
     display: flex;
 }
 
 .contents .column1{
-    background-color:bisque;
+    background-color:rgb(254, 255, 168);
     margin: 0 auto;
     width: 400px;
     height: 624px;
 }
 
 .contents .column2{
-    background-color:bisque;
-    margin: 0 0 20px 20px;
+    background-color:rgb(250, 161, 161);
     width: 400px;
     height: 624px;
 }
 
 .contents .column3{
-    background-color:bisque;
-    margin: 0 0 20px 20px;
+    background-color:rgb(250, 191, 119);
     width: 400px;
     height: 624px;
 }
@@ -53,6 +53,6 @@
 .footer {
     background-color: beige;
     height: 60px;
-    line-height: 60;
+    line-height: 60px;
 }
 
