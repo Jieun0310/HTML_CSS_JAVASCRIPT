@@ -8,7 +8,10 @@
     font-size: 20px;
 }
 
-.wrap div{
+.wrap {}
+
+.wrap .container, 
+.contents{
     display: flex;
     align-items: center;
     justify-content: center;
