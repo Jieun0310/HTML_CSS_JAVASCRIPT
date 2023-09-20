@@ -1,0 +1,46 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{}
+
+.wrap{}
+
+.header{
+    background-color: #222222;
+}
+
+.header .ineer{
+    background-color: #222222;
+    width: 1040px;
+    height: 100px;
+    margin: 0 auto;
+}
+
+.header .inner .logo{
+    width: 96px;
+    height: 39px;
+}
+
+.header .inner .gnb{}
+
+.header .inner .members{}
+
+.contents{}
+
+.contents .photos{}
+
+.contents .texts{}
+
+.footer{
+    background-color: #C9C9C9;
+}
+
+.footer .ineer{
+    background-color: #E9E9E9;
+    width: 1040px;
+    height: 300px;
+    margin: 0 auto;
+}
