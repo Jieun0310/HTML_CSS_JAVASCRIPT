@@ -1,3 +1,4 @@
+/* Ctrl+/ */
 *{
     margin: 0;
     padding: 0;
@@ -8,21 +9,11 @@ body{}
 
 .wrap{}
 
-.header{
-    background-color: #222222;
-}
+.header{}
 
-.header .ineer{
-    background-color: #222222;
-    width: 1040px;
-    height: 100px;
-    margin: 0 auto;
-}
+.header .ineer{}
 
-.header .inner .logo{
-    width: 96px;
-    height: 39px;
-}
+.header .inner .logo{}
 
 .header .inner .gnb{}
 
@@ -34,13 +25,6 @@ body{}
 
 .contents .texts{}
 
-.footer{
-    background-color: #C9C9C9;
-}
+.footer{}
 
-.footer .ineer{
-    background-color: #E9E9E9;
-    width: 1040px;
-    height: 300px;
-    margin: 0 auto;
-}
+.footer .ineer{}
