@@ -104,7 +104,6 @@ body{
 .contents{
     background-color:#FFFFFF ;
     width: 1040px;
-    height: 624px;
     margin: 0 auto;
 
 }
@@ -139,13 +138,34 @@ body{
 
 .contents .section .texts{}
 
-.footer{
-    background-color: #C9C9C9;
-    height: 300px;
+.contents .section .texts h2 {
+    font-size: 24px;
 }
 
-.footer .ineer{
-    background-color:#e44343 ;
+.contents .section .texts p{
+    color: #646464;
+    line-height: 1.5;
+    margin-top: 32px;
+    margin-bottom: 46px;
+}
+
+.contents .section .texts a {
+    display: block;
+    width: 160px;
+    height: 40px;
+    line-height: 40px;
+    background-color: #B28C68;
+    color: #fff;
+    text-align: center;
+}
+
+.footer{
+    background-color: #C9C9C9;
+}
+
+.footer .inner {
+    margin: 0 auto;
+    background-color:#E9E9E9 ;
     width: 1040px;
     height: 300px;
 }

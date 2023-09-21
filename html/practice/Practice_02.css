@@ -29,17 +29,25 @@ body{}
 
 .container{
     background-color: #CCAEFF;
-    height: 80px;
-    margin: 0;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-
 }
 
-.container .gnb{}
+.container .gnb ul{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+}
 
-.container .gnb .li a{}
+.container .gnb ul li {
+    background-color: red;}
+    
+.container .gnb ul li a{
+    display: block;
+    padding: 0 10px;
+    display: block;
+    line-height: 80px;
+    height: 80px;
+}
 
 
 /* .contents */
@@ -49,12 +57,6 @@ body{}
     margin: 0 auto;
     text-align: center;
 }
-
-.contents .item_01{}
-
-.contents .item_01 .photos{}
-
-.contents .item_01 .text{}
 
 .footer{
     background-color:#AA80F3 ;

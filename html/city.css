@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&family=Noto+Sans+KR:wght@400;500;600&display=swap');
+
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+body{
+    color: #222;
+    font-size: 14px;
+    font-family: 'Indie Flower', cursive;
+    font-family: 'Noto Sans KR', sans-serif;
+}
+
+.wrap{}
+
+/* .header{} */
+.header{
+    display: flex;
+    /* display: flex; 로고,메뉴바,버튼 나란히 만들어줌  */
+    border-bottom: 1px solid rgba(0,0,0,0.15);
+    align-items: center; 
+    /* align-items: center; 로고,메뉴바,버튼 중앙 위치 설정*/
+    padding: 0 60px;
+    /* 로고 양옆 간격 */
+
+    
+}
+
+.header .logo {
+    margin-right: auto;
+}
+
+.header .logo img{
+    display: block;
+    width: 93px;
+
+}
+
+.header .gnb {
+    display: flex;
+    
+}
+
+.header .gnb li a{
+    display: block;
+    height: 100px;
+    line-height: 100px;
+    padding: 0 55px;
+}
+
+.header .gnb li a:hover{
+    color: blue;
+}
+
+.header .btns{  
+    margin-left: 72px;
+}
+
+.header .btns .btn{
+    display: block;
+    width: 120px;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    background-color: #222;
+    color: white;
+    font-weight: 600px;
+    border-radius: 6px;
+}
+
+
+/* .contents{} */
+.contents{
+    width: 1170px;
+    margin: 0 auto;
+    padding: 120px 0;
+}
+
+.city_list {}
+
+.city_list li {
+    display: flex;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+
+.city_list li img {
+    display: block;
+    width: 570px;
+}
+
+.insta_list {}
+
+/* .footer{} */
+.footer{}
+.footer p{}
+.footer .sns{}
