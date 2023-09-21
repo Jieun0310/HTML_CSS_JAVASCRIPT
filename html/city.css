@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&family=Noto+Sans+KR:wght@400;500;600&display=swap');
+ @import url('https://fonts.googleapis.com/css2?family=Indie+Flower&family=Noto+Sans+KR:wght@400;500;600&display=swap');
 
 
 *{
@@ -107,4 +107,4 @@ body{
 /* .footer{} */
 .footer{}
 .footer p{}
-.footer .sns{}
+.footer .sns{} 
