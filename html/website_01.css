@@ -26,6 +26,10 @@ a {
     text-decoration: none;
 }
 
+img{
+    display: block;
+}
+
 body{
     color: #222222;
     font-size: 14px;
@@ -105,13 +109,35 @@ body{
 
 }
 
-.contents .photos{}
+.contents .section{
+    display: flex;
+    gap: 60px;
+    margin: 50px 0;
+}
 
-.contents .photos .item01{}
+.contents .section .photos{
+    display: flex;
+    gap: 20px;
+}
 
-.contents .photos .item02{}
+.contents .section .photos .item_01{
+    display: flex;
+    flex-direction: column;
+    gap: 20px; 
+}
 
-.contents .texts{}
+.contents .section .photos .item_01 img{
+    width: 220px;
+    height: 152px;
+
+}
+ 
+.contents .section .photos .item_02 img{
+    width: 220px;
+    height: 324px;
+}
+
+.contents .section .texts{}
 
 .footer{
     background-color: #C9C9C9;
