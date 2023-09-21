@@ -88,13 +88,13 @@ body{
     padding: 120px 0;
 }
 
-.city_list {}
-
-.city_list li {
+.city_list {
     display: flex;
     gap: 30px;
     flex-wrap: wrap;
 }
+
+.city_list li {}
 
 
 .city_list li img {
