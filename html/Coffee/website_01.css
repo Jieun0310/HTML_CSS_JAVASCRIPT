@@ -161,6 +161,7 @@ body{
 
 .footer{
     background-color: #C9C9C9;
+    text-align: center;
 }
 
 .footer .inner {
@@ -168,4 +169,5 @@ body{
     background-color:#E9E9E9 ;
     width: 1040px;
     height: 300px;
+    line-height: 300PX;
 }
