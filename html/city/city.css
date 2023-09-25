@@ -88,23 +88,71 @@ body{
     padding: 120px 0;
 }
 
-.city_list {
+.contents .section:nth-child(1){
+    /* selector.selector:nth-child(number) 그룹 내 직계 자손 숫자를 넣어서 지정 */
+    margin-bottom: 84px;
+}
+
+.contents .titles{
+    margin-bottom: 30px;
+    position: relative;
+}
+
+.contents .titles .view{
+    position: absolute;
+    right: 0;
+    bottom: 2px;
+}
+
+.contents .titles h2{
+    font-size: 26px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.contents .titles span{
+    position: absolute;
+    right: 0;
+    bottom: 6px;
+    color: #808080;
+}
+
+
+.contents .titles p{
+    font-size: 16px;
+    color: #4B4B4B;
+}
+
+.city_list,.insta_list  {
     display: flex;
     gap: 30px;
     flex-wrap: wrap;
 }
-
-.city_list li {}
-
 
 .city_list li img {
     display: block;
     width: 570px;
 }
 
-.insta_list {}
 
 /* .footer{} */
-.footer{}
-.footer p{}
-.footer .sns{} 
+.footer{
+    background-color: #808080;
+    text-align: center;
+    padding-top: 52px;
+    padding-bottom: 64px;
+}
+
+
+.footer .sns{
+    margin-top: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    color:#222
+}
+
+.footer .sns a{
+    font-size: 24px;
+} 

@@ -1,0 +1,79 @@
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700&display=swap" rel="stylesheet">
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+ul{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+    color: inherit;
+}
+
+body{
+    font-family: 'Noto Sans KR', sans-serif;
+    line-height: 1.4; 
+    /* 1.4=140% */
+}
+
+.wrap{}
+
+/* .header{} */
+.header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 60px;
+    border-bottom: 1px solid #ddd;
+
+}
+
+.logo{
+    margin-right: auto;
+}
+
+.logo img{
+    display:block;
+    width: 93px;
+}
+
+.gnb{
+    display: flex;
+}
+
+.gnb li a{
+    display: block;
+    height: 100px;
+    line-height: 100px;
+    padding: 0 55px;
+}
+
+.gnb li a:hover{
+    color: blueviolet;
+}
+
+.btn{
+    width: 120px;
+    height: 50px;
+    line-height: 50px;
+    background-color: #222;
+    color: white;
+    text-align: center;
+    border: 1px solid transparent;
+    border-radius: 8px;
+    margin-left: 57px;
+}
+
+/* .contents{} */
+.contents{}
+
+/* .footer{} */
+.footer{}
+

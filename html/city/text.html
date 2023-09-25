@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .hello{
+            background-color: red;
+            height: 300px;
+            position: relative;
+        }
+
+        .text2{
+            position: absolute;
+            /* 부모가 없는 경우, body를 기준으로 이동함. */
+            right: 0;
+            top: 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="hello">
+        <span class="text1">hello</span>
+        <span class="text2">world</span>
+    </div>
+
+</body>
+</html>

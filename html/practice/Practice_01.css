@@ -17,7 +17,9 @@ img{
     display: block;
 }
 
-body{}
+body{
+    font-size: px;
+}
 
 .wrap{}
 
@@ -32,6 +34,10 @@ body{}
     width: 1040px;
     height: 100px;
     display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 auto;
+    
 }
 
 .header .inner .logo img{
@@ -41,10 +47,114 @@ body{}
 
 .header .inner .gnb{
     display: flex;
+
+}
+
+.header .inner .gnb li a{
+    padding: 0 30px;
+    display: block;
+    height: 100px;
+    line-height: 100px;
+}
+
+.gnb li a:hover {
+    color: orangered;
+}
+
+.member{
+     display: flex;
+     gap: 20px;
+}
+
+.btns{
+    border: 1px solid #B28C68;
+    border-radius: 37px;
+    padding: 4px 10px;
+    width: 70px;
+    height: 30px;
+    line-height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.btn.filled{
+    border: 1px solid transparent;
+    border-radius: 37px;
+    background-color: #B28C68;
+    width: 70px;
+    height: 30px;
+    padding: 4px 12px;
+    line-height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    
+}
+
+.contents{
+    width: 1040px;
+    height: 624px;
+    margin: 0 auto;
+}
+
+.contents .section{
+    display: flex;
+    gap: 60px;
+    margin-top: 150px;
+}
+
+.contents .section .photos{
+    display: flex;
+    gap: 20px;
+}
+
+.photos .item1{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    /* gap은 display:flex; 상태에서만 적용이됨. 해당 부분이 margin, padding 과 가장 큰 차이점임. */
+}
+
+.photos .item1 img{
+    width: 220px;
+    height: 152px;
+}
+
+.photos .item2 img{
+    width: 220px;
+    height: 324px;
+}
+
+p{
+    margin-top: 32px;
+    margin-bottom: 37px;
+    color: #646464;
+}
+
+.btn{
+    display: block;
+    width: 160px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    color: white;
+    background-color: #B28C68;
 }
 
 
+.footer{
+    background-color:#222
+}
 
-.contents{}
-
-.footer{}
+.container{
+    background-color: #646464;
+    width: 1040 px;
+    height: 300px;
+    line-height: 300px;
+    color: aliceblue;
+    text-align: center;
+    margin: 0 auto;
+}
