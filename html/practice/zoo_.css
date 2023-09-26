@@ -1,0 +1,88 @@
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700&display=swap" rel="stylesheet">
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+ul{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+    color: inherit;
+}
+
+body{
+    font-family: 'Noto Sans KR', sans-serif;
+    font-size: 14px;
+}
+
+.wrap{}
+
+/* header */
+.header{
+    display: flex;
+    height: 100px;
+    line-height: 100px;
+    align-items: center;
+    border-bottom: 1px solid #dedede;
+    padding: 0 60px;
+}
+
+.logo{
+    margin-right: auto;
+}
+
+.logo img{
+    display: block;
+    width: 167px;
+}
+
+.gnb{
+    display: flex;
+    gap: 120px;
+    margin-right: 168px;
+}
+
+.gnb a:hover{
+    color: royalblue;
+}
+
+.members{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.members a.btn1{
+    display: block;
+    width: 120px;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    background-color: #222;
+    border-radius: 6px;
+    color: #fff;
+}
+
+.members a.btn2{
+    border: 1px solid #222;
+    width: 120px;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    border-radius: 6px;
+}
+
+
+
+/* .contents{} */
+.contents{}
+
+
+.footer{}
