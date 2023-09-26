@@ -21,6 +21,7 @@ body{
     font-family: 'Noto Sans KR', sans-serif;
     line-height: 1.4; 
     /* 1.4=140% */
+    font-weight: 400;
 }
 
 .wrap{}
@@ -72,24 +73,29 @@ body{
 }
 
 /* .contents{} */
-.contents{}
+.contents{
+    margin-top: 120px;
+    margin-bottom: 248px;
+}
 
 h2{
-    text-align: center;
+    font-size: 40px;
     font-weight: 700;
-    margin-top: 200px;
+    text-align: center;
     margin-bottom: 80px;
 }
 
+/* members */
 .members{
-    display: flex;
+    width: 1170px;
     margin: 0 auto;
+    /* width를 안 하면 margin 적용이 안되어 위치 조정이 되지 않음 */
+    margin-bottom: 170px;
 }
 
 .members ul{
     display: flex;
     gap: 30px;
-    margin-bottom: 170px;
     margin-top: 0px;
 }
 
@@ -99,20 +105,69 @@ h2{
     
 }
 
-.photo img{
-    display: block;
+.members .photo {
+    margin-bottom: 26px;
 }
 
-.section{}
+
+.members .names {
+    color: #4B4B4B;
+}
+
+.members .names h3{
+    font-size: 26px;
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+
+
+.members .names p{
+    font-size: 16px;
+    font-weight: 400;
+}
+    
+
+
+/* movie */
+.section{
+    width: 970px;
+    margin: 0 auto;
+    margin-bottom: 170px;
+}
 
 .section p{
     text-align: center;
-    margin-bottom: 37px;
+    font-size: 24px;
+    width: 65%;
+    padding-bottom: 36px;
+    margin: 0 auto;
+    line-height: 1.6;
 }
 
-.photo img{
+/* 블로그 */
+.blog{}
+
+.blog .titles{
+    position: relative;
+    padding-bottom: 87px;
+    width: 1170px;
     margin: 0 auto;
 }
+
+h3{
+    font-size: 36px;
+    font-weight: 400;
+}
+
+.blog .titles a{
+    position: absolute;
+    top: 20px;
+    right: 0px;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
 
 /* .footer{} */
 .footer{}
