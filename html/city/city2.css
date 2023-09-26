@@ -103,6 +103,17 @@ h2{
     display: block;
 }
 
+.section{}
+
+.section p{
+    text-align: center;
+    margin-bottom: 37px;
+}
+
+.photo img{
+    margin: 0 auto;
+}
+
 /* .footer{} */
 .footer{}
 
