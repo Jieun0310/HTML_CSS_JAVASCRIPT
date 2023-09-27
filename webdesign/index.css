@@ -117,6 +117,7 @@ body{
 .link ul{
     display: flex;   
     flex-wrap: wrap;
+    gap: 10px;
 }
 
 .link ul li{
@@ -129,13 +130,13 @@ body{
 }
 
 
-.link ul li:nth-child(1), .link ul li:nth-child(2){
+/* .link ul li:nth-child(1), .link ul li:nth-child(2){
     margin-bottom: 10px;
 }
 
 .link ul li:nth-child(1), .link ul li:nth-child(3){
     margin-right: 16px;
-}
+} */
 
 
 .footer{
@@ -158,5 +159,10 @@ body{
     display: flex;
     gap: 24px;
     opacity: 0.7;
+}
 
+.footer .sns li{
+    display: flex;
+    align-items: center;
+    gap: 5px;
 }
