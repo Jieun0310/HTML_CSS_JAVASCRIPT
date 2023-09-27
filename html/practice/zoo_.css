@@ -113,6 +113,11 @@ body{
     flex-direction: column;
 }
 
+/* .animals ul li{
+    display: flex;
+    flex-direction: column;
+} -> 필수는 아니지만 li 요소 내 간격 조정하기 용이함*/
+
 .animals .photo img{
     display: block;
 }
