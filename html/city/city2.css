@@ -138,7 +138,7 @@ h2{
 .section p{
     text-align: center;
     font-size: 24px;
-    width: 65%;
+    /* width: 65%; */
     padding-bottom: 36px;
     margin: 0 auto;
     line-height: 1.6;
