@@ -1,0 +1,162 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+ul{
+    list-style: none;
+}
+
+a{
+    color: inherit;
+    text-decoration: none;
+}
+
+body{
+    font-size: 14px;
+    color: #222;
+}
+
+.wrap{
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.header{
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid #002866;
+    justify-content: space-between; 
+    /* or 
+    .header logo {
+        margin-right: auto;
+    }  
+      */
+    
+}
+
+.header .gnb{
+    display: flex;
+}
+
+.header .gnb li a{
+    display: block;
+    height: 100px;
+    line-height: 100px;
+    padding: 0 40px;
+    /* 글자 중앙 설정 방법(2)
+    display: flex
+    align-items: center;
+    justify-content: space-between;
+     */
+}
+
+.header .gnb li a:hover{
+    color:blueviolet
+}
+
+.slider img{
+    display: block;
+    width: 100%;
+}
+
+
+/* .contents */
+.contents{
+    display: flex;
+    /* gap: 20px; */
+    height: 200px;
+    padding: 10px 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+.contents .item{
+    width: 384px;
+}
+
+.board .board__titles{
+    display: flex;
+    gap: 4px;
+    border-bottom: 3px solid red;
+
+}
+
+.board .board__titles h3{
+    width: 48px;
+    line-height: 48px;
+    text-align: center;
+    flex: 1;
+}
+
+.board .board__titles h3:first-child{
+    background-color: red;
+}
+
+.board .board__titles h3:last-child{
+    background-color: #F0F0F0;
+}
+
+.board .notice__list{
+    display: block;
+    margin: 10px 0;
+}
+
+.board .notice__list {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    padding: 10px;
+}
+
+.board .notice__list a:hover {
+    text-decoration: underline;
+}
+
+.link ul{
+    display: flex;   
+    flex-wrap: wrap;
+}
+
+.link ul li{
+    width: 184px;
+    background-color: #d9d9d9;
+    height: 85px;
+    line-height: 85px;
+    text-align: center;
+    border-radius: 8px;
+}
+
+
+.link ul li:nth-child(1), .link ul li:nth-child(2){
+    margin-bottom: 10px;
+}
+
+.link ul li:nth-child(1), .link ul li:nth-child(3){
+    margin-right: 16px;
+}
+
+
+.footer{
+    display: flex;
+    background-color: #eeeeee;
+    height: 100px;
+    align-items: center;
+    margin: 0 auto;
+    justify-content: space-between;
+    padding: 0 20px
+}
+
+.footer_logo{
+    filter: grayscale(1);
+    align-items: center;
+    mix-blend-mode: multiply;
+}
+
+.footer .sns{
+    display: flex;
+    gap: 24px;
+    opacity: 0.7;
+
+}

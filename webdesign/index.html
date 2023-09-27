@@ -4,12 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>웹디자인 레이아웃 연습</title>
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css">
     <link rel="stylesheet" href="./index.css">
 </head>
 <body>
     <div class="wrap">
         <div class="header">
-            <div class="log"><img src="./images/logo.png.png" alt="logo"></div>
+            <a href=""><div class="log"><img src="./images/logo.png.png" alt="logo"></div></a>
             <ul class="gnb">
                 <li><a href="#">탑</a></li>
                 <li><a href="#">아우터</a></li>
@@ -18,30 +19,49 @@
             </ul>
         </div>
 
-        <div class="sleder">
-            <img src="./images/슬라이더_01.jpg" alt="슬라이더">
+        <div class="slider">
+            <a href="#"><img src="./images/슬라이더_01.jpg" alt="슬라이더"></a>
         </div>
 
         <div class="contents">
-            <div class="item">
-                <div class="titles">
+
+            <div class="item board">
+                <div class="board__titles">
                         <h3>공지사항</h3>
                         <h3>갤러리</h3>
                     </ul>
                 </div>
-                <ul class="notice_list">
-                    <li><a href="#">2021년 2월 무이자 카드 할부 안내 2021년 2월 무이자 할부 카드 안내</a></li>
-                    <li><a href="#">쿠폰 사용안내 2021년2월 무이자 할부 카드 안내</a></li>
-                    <li><a href="#">쿠폰 다운로드&사용방법</a></li>
-                    <li><a href="#">모바일APP 설치하고 10%할인 쿠폰 받자!! 2021년 2월 무이자 할부 카드 안내</a></li>
+                <ul class="notice__list">
+                    <li><i class="xi-angle-right-thin"></i><a href="#">2021년 2월 무이자 카드 할부 안내</a></li>
+                    <li><i class="xi-angle-right-thin"></i><a href="#">쿠폰 사용안내 2021년2월 무이자 할부 카드 안내</a></li>
+                    <li><i class="xi-angle-right-thin"></i><a href="#">쿠폰 다운로드&사용방법</a></li>
+                    <li><i class="xi-angle-right-thin"></i><a href="#">모바일APP 설치하고 10%할인 쿠폰 받자!! 2021년 </a></li>
                 </ul>
             </div>
-            <div class="item"></div>
-            <div class="item"></div>
-        </div>
-        <div class="footer"></div>
-    </div>
 
-    
+            <div class="item banner">
+                <img src="./images/배너_01.png" alt="배너">
+            </div>
+
+            <div class="item link">
+                <ul>
+                    <li><a href="">나의 계정</a></li>
+                    <li><a href="">헤이 음악</a></li>
+                    <li><a href="">계정 추가</a></li>
+                    <li><a href="">클라우드</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="footer">
+            <div class="footer_logo"><img src="./images/logo.png.png" alt="footer logo"></div>
+            <p>© 2020 kakao Enterprise. The kakao i is a trademark of kakaocorp</p>
+            <ul class="sns">
+                <li><i class="xi-facebook-official">facebook</i></li>
+                <li><i class="xi-instagram">instagram</i></li>
+                <li><i class="xi-youtube-play">youtube</i></li>
+            </ul>
+        </div>
+    </div>
 </body>
 </html>
