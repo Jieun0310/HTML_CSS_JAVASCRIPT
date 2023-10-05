@@ -1,0 +1,158 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+ul{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+    color: inherit;
+}
+
+body{
+    color: #222;
+    font-size: 14px;
+    line-height: 1.4;
+}
+
+.wrap{
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.slider{
+    display: block;
+    width: 100%;
+}
+
+/* contents */
+
+.contents {
+    display: flex;
+    gap: 20px;
+    padding: 10px 0;
+}
+
+.contents .board, 
+.contents .banner, 
+.contents .link {
+    height: 180px;
+    flex: 1;
+}
+
+.contents .titles{
+    display: flex;
+    gap: 4px;
+    border-bottom: 3px solid red;
+}
+
+.contents .titles h2{
+    flex: 1;
+    height: 48px;
+    line-height: 48px;
+    text-align: center;
+    font-size: 14px;
+    font-weight: normal;
+    color: white;
+    background-color: red;
+    cursor: pointer;
+    
+}
+
+.contents .titles h2:last-child{
+    background-color: #f0f0f0;
+    color: #222;
+}
+
+.board ul{
+    padding: 10px;
+
+}
+
+.board ul li a{
+    display: block;
+    padding: 4px;
+}
+
+.board ul li a:hover{
+    text-decoration: underline;
+}
+
+.banner img{
+    display: block;
+    width: 100%;
+}
+
+.link{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px 16px;
+}
+
+.link li a{
+    background-color: #d9d9d9;
+    width: 184px;
+    display: block;
+    height: 85px;
+    line-height: 85px;
+    text-align: center;
+    border-radius: 8px;
+    
+}
+
+.link li a:hover {
+    font-weight: bold;
+}
+
+/* footer */
+.footer{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+    background-color: #eee;
+}
+
+.footer .logo{
+    height: 100px;
+}
+
+.footer .p{
+    height: 100px;
+}
+
+.footer .sns {
+    display: flex;
+    gap: 30px;
+}
+
+
+
+
+/* header */
+.header{
+    display: flex;
+    height: 100px;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid #314A72;
+}
+
+.nav{
+    display: flex;
+}
+
+.nav li a{
+    display: block;
+    padding: 0 40px;
+    height: 100px;
+    line-height: 100px;
+}
+
+.nav li a:hover{
+    color: orangered;
+}
