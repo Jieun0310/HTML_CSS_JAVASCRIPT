@@ -1,0 +1,172 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+ul{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+    color: inherit;
+}
+
+img{
+    display: block;
+}
+
+body{
+    color: #222;
+    font-size: 14px;
+    font-weight: normal;
+    background-color: antiquewhite;
+}
+
+#wrap{
+    width: 1200px;
+    margin: 0 auto;
+}
+
+/* header */
+#header{
+    display: flex;
+    height: 100px;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 3px solid #4F9E91;
+    padding: 0 20px;
+}
+
+#header .nav{
+    display: flex;
+}
+
+#header .nav li a{
+    display: block;
+    padding: 0 40px;
+    height: 100px;
+    line-height: 100px;
+}
+
+#header .nav li a:hover{
+    color:orangered
+}
+
+
+/* main */
+#contents{
+    display: flex;
+    gap: 20px;
+    padding: 10px 0;
+}
+
+#contents .content1, .contetn2, .content3 {
+    flex: 1;
+    height: 180px;
+}
+
+.content1 .titles{
+    display: flex;
+}
+
+.content1 .titles h2{
+    flex: 1;
+    text-align: center;
+    height: 48px;
+    line-height: 48px;
+    font-size: 14px;
+    font-weight: normal;
+    background-color: #4F9E91;
+    border-bottom: 3px solid #4F9E91;
+}
+
+.content1 .titles h2:hover{
+    cursor:pointer;
+}
+
+.content1 .titles h2:last-child{
+    background-color: #A1E2D8;
+}
+
+.content1 .texts{
+    padding: 10px;
+}
+
+
+.content1 .texts li{
+    display: block;
+    padding: 4px 0;
+}
+
+.content1 .texts li a:hover{
+    text-decoration: underline;
+}
+
+.content3 .links{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px 16px;
+}
+
+.content3 .links li a{
+    display: block;
+    width: 184px;
+    height: 84px;
+    line-height: 84px;
+    text-align: center;
+    background-color: #4F9E91;
+    border-radius: 8px;
+}
+
+.content3 .links li a:hover{
+    font-weight: bold;
+}
+
+.content4{
+    display: flex;
+}
+
+.story .blog{
+    display: flex;
+    margin: 10px 0;
+    gap: 20px;
+}
+
+.story img{
+    height: 300px;
+    float: left;
+}
+
+/* footer */
+#footer{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 100px;
+    background-color: #c2c1c1;
+    padding: 0 20px;
+}
+
+#footer .sns{
+    display: flex;
+}
+
+#footer .sns li{
+    display: flex;
+    padding: 0 10px;
+    text-align: center;
+    height: 20px;
+    line-height: 20px;
+}
+
+#footer .sns li i{
+    padding: 0 10px;
+    font-size: 20px;
+    
+}
+
+#footer .sns li a{
+    display: block;
+}
