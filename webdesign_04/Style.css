@@ -19,10 +19,19 @@ body{
     color: #222;
 }
 
+img{
+    display: block;
+    width: 100%;
+}
+
 .wrap{
     width: 1200px;
     margin: 0 auto;
 }
+
+
+
+
 
 /* header */
 .header{
@@ -61,6 +70,81 @@ body{
     height: 200px;
     padding: 10px 0;
     display: flex;
+    gap: 24px;
+}
+
+.contents > div{
+    flex: 1;
+}
+
+.board {}
+
+.board .titles{
+    display: flex;
+    gap: 4px;
+    border-bottom: 3px solid #ff6347;
+}
+
+.board .titles h2{
+    flex: 1;
+    text-align: center;
+    height: 48px;
+    line-height: 48px;
+    font-size: 14px;
+    font-weight: normal;
+    background-color: #ff6347;
+}
+
+.board .titles h2:hover{
+    cursor: pointer;
+}
+
+.board .titles h2:last-child{
+    background-color: #eeeeee;
+}
+
+.board .notice_list{
+    padding: 10px;
+}
+
+.board .notice_list li a{
+    display: block;
+    padding: 4px 0;
+    width: 360px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+
+    /* 글자 줄임표 나타내는 방법 
+    width: 360px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden; 
+    */
+}
+
+.board .notice_list li a:hover{
+    text-decoration: underline;
+}
+
+.link{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px 16px;
+}
+
+.link a{
+    display: block;
+    width: 184px;
+    height: 84px;
+    line-height: 84px;
+    text-align: center;
+    background-color: #d9d9d9;
+    border-radius: 8px;
+}
+
+.link a:hover{
+    background-color: rgb(248, 115, 67);
 }
 
 /* footer */
@@ -68,4 +152,13 @@ body{
     display: flex;
     margin: 0 auto;
     background-color: #eeeeee;
+    align-items: center;
+    justify-content: space-between;
+    height: 100px;
+    padding: 0 20px;
+}
+
+.footer .sns{
+    display: flex;
+    gap: 30px;
 }
