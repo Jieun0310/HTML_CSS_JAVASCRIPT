@@ -1,0 +1,160 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+ul{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+    color: inherit;
+}
+
+body{
+    font-size: 14px;
+    font-weight: normal;
+}
+
+.wrap{
+    width: 1200px;
+    margin: 0 auto;
+}
+
+img{
+    display: block;
+}
+
+/* header */
+.header{
+    display: flex;
+    height: 100px;
+    align-items: center;
+    justify-content: space-between; 
+    border-bottom: 3px solid #FF6161;
+}
+
+.header .nav{
+    display: flex;
+}
+
+.header .nav li{
+    height: 100px;
+    line-height: 100px;
+}
+
+.header .nav li a{
+    margin: 0 40px;
+}
+
+.header .nav li a:hover{
+    color: #82CABE;
+}
+
+.header .btns{
+    display: flex;
+    gap: 10px;
+}
+
+.header .btns li {
+    padding: 8px 23px;
+    line-height: 30px;
+    border: 1px solid #FF6161;
+    border-radius: 8px;
+    text-align: center;
+    background-color: #F6F6F6;
+}
+
+.header .btns li:last-child {
+    background-color: #FF6161;
+    color: #F6F6F6;
+}
+
+/* article */
+.slider .slide img{
+    margin-bottom: 10px;
+}
+
+/* main */
+.contents{
+    display: flex; 
+    margin: 0 auto; 
+    gap: 26px;
+    margin-bottom: 10px;
+}
+
+.content,.banner,.links{
+    flex: 1;
+    height: 180px;
+}
+
+.content .titles{
+    display: flex;
+    border-bottom: 3px solid #FC5353;
+}
+
+.content .titles h2{
+    font-size: 14px;
+    background-color: #F6F6F6;
+    text-align: center;
+    height: 48px;
+    line-height: 48px;
+    flex: 1;
+}
+
+.content .titles h2:first-child{
+    background-color: #FC5353;
+    color: #F6F6F6;
+}
+
+.contents .texts{
+    margin: 16px 10px;
+}
+
+.contents .texts p{
+    margin-top: 8px;
+}
+
+.contents .texts a{
+    margin-left: 4px;
+
+}
+
+.contents .texts a:hover {
+    text-decoration: underline;
+}
+
+
+.contents .links{
+    display: flex;
+    flex-wrap: wrap; 
+    gap: 12px 12px;
+}
+
+.contents .links li{
+    width: 184px;
+    height: 84px;
+    line-height: 84px;
+    text-align: center;
+    background-color: #DCDCDC;
+    border-radius: 8px;
+}
+
+.contents .links li a{
+    
+}
+
+.contents .links li a{
+    margin-left: 8px;
+}
+    
+
+/* footer */
+.footer{
+    display: flex;
+    margin: 0 auto;
+    align-items: center;
+    justify-content: space-between;
+}
