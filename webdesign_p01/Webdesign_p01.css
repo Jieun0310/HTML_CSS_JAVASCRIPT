@@ -40,18 +40,20 @@ img{
     display: flex;
 }
 
-.header .nav li{
+.nav li{
     height: 100px;
     line-height: 100px;
 }
 
-.header .nav li a{
-    margin: 0 40px;
+.nav li a{
+    padding: 0 40px;
 }
 
-.header .nav li a:hover{
-    color: #82CABE;
+.nav ul li{
+    display: none;
 }
+
+
 
 .header .btns{
     display: flex;
@@ -81,17 +83,22 @@ img{
 .contents{
     display: flex; 
     margin: 0 auto; 
-    gap: 26px;
+    gap: 28px;
     margin-bottom: 10px;
 }
 
-.content,.banner,.links{
+.contents > div{
+    flex: 1;
+}
+
+/* .content,.banner,.links{
     flex: 1;
     height: 180px;
-}
+} */
 
 .content .titles{
     display: flex;
+    gap: 4px;
     border-bottom: 3px solid #FC5353;
 }
 
@@ -110,15 +117,19 @@ img{
 }
 
 .contents .texts{
-    margin: 16px 10px;
+    padding: 16px 10px;
 }
 
-.contents .texts p{
-    margin-top: 8px;
-}
 
-.contents .texts a{
-    margin-left: 4px;
+
+.contents .texts li i{
+    display: block;
+    padding: 4px 0;
+    width: 360px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+    
 
 }
 
@@ -126,30 +137,31 @@ img{
     text-decoration: underline;
 }
 
+.contents .gallery_list{
+    display: none}
+
+
 
 .contents .links{
     display: flex;
     flex-wrap: wrap; 
-    gap: 12px 12px;
+    gap: 8px 12px;
 }
 
-.contents .links li{
-    width: 184px;
+.contents .links a{
+    display: block;
     height: 84px;
+    width: 184px;
     line-height: 84px;
     text-align: center;
     background-color: #DCDCDC;
     border-radius: 8px;
 }
 
-.contents .links li a{
-    
-}
+.contents .links a:hover{
+    background-color: #FC5353;
 
-.contents .links li a{
-    margin-left: 8px;
 }
-    
 
 /* footer */
 .footer{
@@ -157,4 +169,41 @@ img{
     margin: 0 auto;
     align-items: center;
     justify-content: space-between;
+    background-color: #d9d9d9;
+    height: 100px;
+    padding: 0 20px;
+}
+
+.footer .sns{
+    display: flex;
+}
+
+.footer .sns li{
+    padding: 0 20px;
+    cursor: pointer;
+}
+
+.footer .sns li i{ 
+    margin-right: 4px;
+}
+
+.popup{
+    background-color: #fff;
+    border: 1px solid #d9d9d9;
+    line-height: 1.6;
+    width: 600px;
+    height: 400px;
+    padding: 50px;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.popup h2{
+    font-size: 26px;
+}
+
+.popup p{
+    padding: 10px 0;
 }
