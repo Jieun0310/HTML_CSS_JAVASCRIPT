@@ -1,0 +1,214 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+ul{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+    color: inherit;
+}
+
+body{
+    font-size: 14px;
+}
+
+
+.wrap{
+    width: 1200px;
+    margin: 0 auto;
+}
+
+/* header */
+.header{
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    : 1px solid blue;
+}
+
+.nav ul{
+    display: none;
+    position: absolute; 
+    /* position: absolute; 는 width 가 사라짐 */
+    top: 100;
+    left: 0;
+    width: 100%;
+}
+
+.nav ul li a{
+    display: block;
+    padding: 16px 10px; 
+    background-color: #fff;
+    text-align: center;
+}
+
+.nav{
+    display: flex;
+}
+
+.nav >li {
+    position: relative;
+}
+
+.nav > li > a{ 
+    display: block;
+    padding: 0 60px;
+    height: 100px;
+    line-height: 100px;
+}
+
+.nav > li > a:hover{
+    color: orangered;
+}
+
+/* article */
+.slider{
+    position: relative;
+    height: 300px;
+    overflow: hidden;
+    /* 넘어가는 디자인 순김 */
+}
+
+.slides{
+    display: flex;
+    position: absolute;
+    top: 0;
+    left: 0%;
+    /* -100% 두번째 디자인, -200% 3번째 디자인 */
+}
+
+.slide img{
+    display: block;
+}
+
+/* contents */
+.contents{
+    display: flex;
+    gap: 24px;
+    height: 200px;
+    padding: 10px 0;
+
+}
+
+.contents> div{
+    width: 384px;
+}
+
+.board .titles{
+    display: flex;
+    gap: 4px;
+    border-bottom: 3px solid red;
+}
+
+.board .titles h2{
+    background-color: #f0f0f0;
+    text-align: center;
+    height: 48px;
+    line-height: 48px;
+    width: 190px;
+    font-size: 14px;
+    font-weight: normal;
+}
+
+.board .titles h2.active{
+    background-color: red;
+    color: white;
+}
+
+.board .notice_list{
+    padding: 14px;
+    display: none;
+}
+
+.board .notice_list li{
+    padding-left: 10px;
+    position: relative;
+}
+
+.board .notice_list li::before{
+    content: '>';
+    position: absolute;
+    top: 4px;
+    left: 0;
+    color: blue;
+}
+
+
+.board .notice_list li a{
+    display: block;
+    padding: 4px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    width: 360px;
+}
+
+.board .notice_list li a:hover{
+    text-decoration: underline;
+}
+
+
+.board .gallery_list{
+    /* display: none; */
+    padding: 10px;
+    /* display: flex; */
+    gap: 16px;
+}
+
+.board .gallery_list li{
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.board .gallery_list li:last-child{
+    margin-right: 0;
+}
+.board .gallery_list img{
+    width: 110px;
+
+}
+
+.link ul{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px 16px;
+}
+
+.link ul a{
+    display: block;
+    width: 184px;
+    height: 85px;
+    line-height: 85px;
+    text-align: center;
+    background-color: #d9d9d9;
+    border-radius: 8px;
+    
+}
+
+.link ul a:hover{
+    background-color: aquamarine;
+}
+
+/* footer */
+.footer{
+    background-color: antiquewhite;
+    display: flex;
+    align-items: center;
+    justify-content:space-between;
+    height: 100px;
+    padding: 0 20px;
+}
+
+.sns{
+    display: flex;
+    gap: 30px;
+}
+.sns a:hover{
+    text-decoration: underline;
+}
