@@ -188,12 +188,13 @@ img{
 }
 
 .popup{
+    display: none;
     background-color: #fff;
     border: 1px solid #d9d9d9;
     line-height: 1.6;
     width: 600px;
     height: 400px;
-    padding: 50px;
+    padding: 40px;
     position: fixed;
     top: 50%;
     left: 50%;
@@ -205,5 +206,20 @@ img{
 }
 
 .popup p{
-    padding: 10px 0;
+    margin-top: 15px;
+    margin-bottom: 30px;
+    line-height: 1.6;
+}
+
+.popup a{
+    display: block;
+    width: 50px;
+    height: 30px;
+    line-height: 30px;
+    background-color: #535353;
+    color: white;
+    text-align: center;
+    position: absolute;
+    bottom: 40px;
+    right: 40px;
 }
