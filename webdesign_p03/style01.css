@@ -22,6 +22,7 @@ body{
     margin: 0 auto;
 }
 
+/* header */
 .header{
     display: flex;
     align-items: center;
@@ -29,6 +30,7 @@ body{
     padding: 0 20px;
     background-color: rgb(27, 25, 25);
     color: whitesmoke;
+    border-bottom: 3px solid palevioletred;
 }
 
 .logo{
@@ -52,13 +54,18 @@ body{
     font-weight: bold;
 }
 
+.nav>li>a:hover{
+    color: red;
+}
+
 .nav ul{
-    display: none;
+    /* display: none; */
     position: absolute;
     top: 100px;
     left: 0;
     width: 100%;
     background-color: black;
+    /* z-index: 1; */
    
 }
 
@@ -71,6 +78,11 @@ body{
     padding: 20px 20px;
 }
 
+.nav ul li a:hover{
+    background-color: palevioletred;
+}
+
+/* article */
 .slider{
     position: relative;
     height: 300px;
@@ -88,21 +100,23 @@ body{
     display: block;
 }
 
+/* main */
 .contents{
     display: flex;
     margin: 13px 0;
+    gap: 24px;
 }
 
 .board{}
 
-.board .titles{
+.titles{
     display: flex;
     gap: 2px;
     border-bottom: 3px solid palevioletred;
     
 }
 
-.board .titles a{
+.titles a{
     display: block;
     flex: 1;
     width: 180px;
@@ -113,8 +127,149 @@ body{
     color: whitesmoke;
 }
 
-.board .titles a:last-child{
+.titles a:last-child{
     background-color: rgb(238, 237, 237);
     color: black;
 }
 
+.list{
+    padding: 12px;
+}
+
+.list ul{
+    
+}
+
+.list ul li{
+    position: relative;
+}
+
+.notice_list li::before{
+    content: '>';
+    position:absolute;
+    top: 4px;
+    left: -10px;
+}
+
+.notice_list li a{
+    display: block;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    width: 340px;
+    padding: 4px;
+}
+
+.notice_list li a:hover{
+    text-decoration: underline;
+}
+
+.gellary_list{
+    display: none;
+}
+.gellary_list li{
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.gellary_list li:last-child{
+    margin-right: 0;
+}
+
+.gellary_list li img{
+    width: 110px;
+}
+
+.banner img{
+    display: block;
+}
+
+.link{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12PX 16PX;
+}
+.link li{
+    width: 184px;
+    height: 84px;
+    line-height: 84px;
+    background-color: antiquewhite;
+    border-radius: 8px;  
+}
+
+.link li a{
+    display: block;
+    text-align: center;
+}
+
+.link li a:hover{
+    background-color: palevioletred;
+}
+
+.footer{
+    display: flex;
+    background-color: rgb(161, 161, 161);
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+}
+
+.f_logo{
+    display: block;
+}
+
+.sns{
+    display: flex;
+    gap: 20px;
+    
+}
+
+
+.sns li i{
+    padding: 0px 10px;
+}
+
+.sns li a{
+    display: block;
+    height: 100px;
+    line-height: 100px;
+    text-align: center;
+}
+
+.sns li a:hover{
+    text-decoration: underline;
+ 
+}
+
+.popup{
+    padding: 20px;
+    width: 400px;
+    height: 400px;
+    background-color: rgb(247, 248, 244);
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    border: 5px solid rgb(243, 91, 91);
+    
+}
+
+.popup h2{
+    margin-bottom: 20px;
+}
+
+.popup p{
+    line-height: 1.6;
+    
+}
+
+button{
+    position: absolute;
+    top:85%;
+    left: 80%;
+    border: none;
+    width: 50px;
+    height: 30px;
+    background-color: rgb(112, 111, 111);
+    color: white;
+}
