@@ -160,7 +160,7 @@ body{
 .board .gallery_list{
     display: none;
     padding: 10px;
-    /* display: flex; */
+    display: flex;
     gap: 16px;
 }
 
