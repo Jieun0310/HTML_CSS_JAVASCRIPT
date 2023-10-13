@@ -11,3 +11,21 @@
     /* 나의 넓이와 높이만큼 50%씩 움직이게 하기 위해 위 값 적용 */
     display: none;
 }
+
+section{
+    margin: 30px 0;
+}
+
+.box{
+    width: 100px;
+    height: 60px;
+    line-height: 60px;
+    background-color: palevioletred;
+    text-align: center;
+    border-radius: 8px;
+}
+
+.box.active{
+    background-color: blue;
+    color: wheat;
+}
