@@ -1,0 +1,13 @@
+.modal{
+    width: 400px;
+    height: 300px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    padding: 20px;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    /* 나의 넓이와 높이만큼 50%씩 움직이게 하기 위해 위 값 적용 */
+    display: none;
+}

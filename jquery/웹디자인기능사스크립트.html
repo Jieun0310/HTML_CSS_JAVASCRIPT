@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>웹디자인기능사 스크립트</title>
+    <script src="./script/basic/jquery-3.7.1.js"></script>
+    <link rel="stylesheet" href="./script/css/main.css">
+</head>
+<body>
+    <button class="show_modal">팝업모달</button>
+    <div class="modal">
+        <h2>이것은 모달입니다.</h2>
+        <p>문구는 웹사이트의 목적과 대상 고객을 고려하여 조정하고 커스터마이즈하는 것이 중요합니다. 
+            또한 시즌과 이벤트에 따라 업데이트할 수 있도록 유연하게 설계하는 것이 좋습니다.
+            문구는 웹사이트의 목적과 대상 고객을 고려하여 조정하고 커스터마이즈하는 것이 중요합니다. 
+            또한 시즌과 이벤트에 따라 업데이트할 수 있도록 유연하게 설계하는 것이 좋습니다.</p>
+            <button class="close_modal">닫기</button>
+    </div>
+    
+    <script>
+        $('.show_modal').click(
+            function() {
+                $('.modal').show()
+            }
+        )
+        $('.close_modal').click(
+            function() {
+                $('.modal').hide()
+            }
+        )
+    </script>
+</body>
+</html>
