@@ -24,12 +24,14 @@ body{
 }
 
 .header{
+    /* position: relative; */
     display: flex;
     align-items: center;
     justify-content: space-between;
     background-color: aliceblue;
     padding: 0 20px;
     border-bottom: 3px solid #FF6161;
+    
 }
 
 .logo img{
@@ -39,6 +41,7 @@ body{
 .nav{
     display: flex;
     /* gap: 30px; */
+    z-index: 1;
     
 }
 
@@ -89,20 +92,33 @@ body{
     color: white;
     text-align: center;
     border-radius: 8px;
+    border: 1px solid #FF6161;
 }
 
 .btns li:last-child{
-    background-color: #F6F6F6;
-    border: 1px solid #FF6161;
+    background-color: #F6F6F6;   
     color: #FF6161;
 }
 
-    .btns li a{
+.btns li.active:last-child{
+    background-color: #FF6161;
+    color: white;
+}
+
+.btns li a{
     font-display: block;    
 }
 
 .btns li:last-child a::before{
     content: '♡'
+}
+
+.btns li.active:last-child a::before{
+    content: '♥'
+}
+
+.btn1.active{
+    background-color: #FF6161;
 }
 
 /* article */
@@ -256,3 +272,27 @@ body{
     height: 100px;
     line-height: 100px;
 }
+
+.popup{
+    display: none;
+    position: fixed;
+    width: 400px;
+    height: 300px;
+    border: 1px solid #b9b9b9;
+    padding: 30px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    background-color: #fff;
+}
+
+.popup p{
+    margin: 10px 0;
+}
+
+.popup button{
+    position: absolute;
+    top: 70%;
+    left: 80%;
+}
+

@@ -9,7 +9,9 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css">
+    <script src="./jquery/jquery-3.7.1.js"></script>
 </head>
+
 <body>
     <div class="wrap">
         <header class="header">
@@ -54,7 +56,7 @@
             </ul>
             <ul class="btns">
                 <li><a href="#">Log in</a></li>
-                <li><a href="#">Donate</a></li>
+                <li class="bbb"><a href="#">Donate</a></li>
             </ul>
         </header>
         <!-- //header -->
@@ -71,8 +73,8 @@
         <main class="contents">
             <div class="board">
                 <ul class="titles">
-                    <li ><a href="#" class="">공지사항</a></li>       
-                    <li ><a href="#" class="">갤러리</a></li>       
+                    <li><a href="#" class="notice">공지사항</a></li>       
+                    <li><a href="#" class="gellary">갤러리</a></li>       
                 </ul>
                 <div class="list">
                     <ul class="notice_list">
@@ -99,7 +101,7 @@
 
             <div>        
                 <ul class="link">
-                    <li><a href="#">나의계정</a></li>
+                    <li class="modal"><a href="#">나의계정</a></li>
                     <li><a href="#">구매목록</a></li>
                     <li><a href="#">장바구니</a></li>
                     <li><a href="#">고객센터</a></li>
@@ -118,5 +120,53 @@
             </ul>
         </footer>
 
+        <div class="popup">
+            <h2>이것은 팝업입니다.</h2>
+            <p>문구는 웹사이트의 목적과 대상 고객을 고려하여 조정하고 커스터마이즈하는 것이 중요합니다. 또한 시즌과 이벤트에 따라 업데이트할 수 있도록 유연하게 설계하는 것이 좋습니다.문구는 웹사이트의 목적과 대상 고객을 고려하여 조정하고 커스터마이즈하는 것이 중요합니다. 또한 시즌과 이벤트에 따라 업데이트할 수 있도록 유연하게 설계하는 것이 좋습니다.
+            </p>
+            <button>닫기</button>
+        </div>
+
+        <script>
+            $('.nav').hover(
+                function(){
+                    $(this).find('ul').slideDown('fast')
+                },
+                function(){
+                    $(this).find('ul').slideUp('fast')
+                },
+            )
+
+            $('.bbb').click(function(){
+                $(this).toggleClass('active')
+            })
+
+            $('.gellary').click(
+                function(){
+                    $(this).toggleClass('active')
+                    $('.notice').removeClass('active')
+                    $('.gellary_list').show('ul')
+                    $('.notice_list').hide('ul')
+
+                }
+            )
+            $('.notice').click(
+                function(){
+                    $(this).toggleClass('active')
+                    $('.gellary').removeClass('active')
+                }
+            )
+
+            $('.modal').click(
+                function(){
+                    $('.popup').show()
+                }
+            )
+            $('button').click(
+                function(){
+                    $('.popup').hide()
+                }
+            )
+        </script>
 </body>
 </html>
