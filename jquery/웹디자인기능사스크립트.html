@@ -18,6 +18,19 @@
             <button class="close_modal">닫기</button>
     </div>
 
+    <script>
+        $('.show_modal').click(
+            function() {
+                $('.modal').show()
+            }
+        )
+        $('.close_modal').click(
+            function() {
+                $('.modal').hide()
+            }
+        )
+    </script>
+
     <section>
     <button class="btn">버튼</button>
     <button class="btn2">버튼2</button>
@@ -43,18 +56,100 @@
         )
     </script>
 
- 
+    <hr>
+
+    <ul class="gnb">
+        <li>
+            <a href="#">과일</a>
+            <ul class="sub">
+                <li>사과</li>
+                <li>딸기</li>
+                <li>포도</li>
+            </ul>
+        </li>
+        <li>
+            <a href="#">채소</a>
+            <ul class="sub">
+                <li>토마토</li>
+                <li>당근</li>
+                <li>오이</li>
+            </ul>
+        </li>
+    </ul>
+
     <script>
-        $('.show_modal').click(
-            function() {
-                $('.modal').show()
-            }
-        )
-        $('.close_modal').click(
-            function() {
-                $('.modal').hide()
-            }
+        // $('.gnb').mouseenter(function(){
+            
+        // })
+
+        // $('.gnb').mouseleave(function(){
+            
+        // })
+
+        // $('.gnb').hover(
+        //     function(){
+        //         $('.sub').show()
+        //     },
+        //     function(){
+        //         $('.sub').hide()
+        //     },
+        // )
+
+        $('.gnb').hover(
+            function(){
+                $('.sub').stop().slideDown(300) 
+                // $('.sub').slideDown('fast')  slideDown('slow') 
+            },
+            function(){
+                $('.sub').stop() .slideUp(300)
+            },
         )
     </script>
+
+    <hr>
+    <div class="silder">
+        <div class="slides">
+            <div class="slide"><img src="./images/슬라이더 01.png" alt="01"></div>
+            <div class="slide"><img src="./images/슬라이더 02.png" alt="02"></div>
+            <div class="slide"><img src="./images/슬라이더 03.png" alt="03"></div>
+        </div>
+    </div>
+
+    
+<script>
+    setInterval(function(){
+        $('.slides').animate({left: '-100%'}, function(){
+            $('.slide').first().appendTo('.slides')
+            $('.slides').css('left', 0)
+        })
+    }, 3000)
+
+</script>
+
+   <div class="contents">
+        <div class="tab">
+            <div class="titles">
+                <h2 class="active">공지사항</h2>
+                <h2>갤러리</h2>
+            </div>
+            <div class="items">
+                <div class="item">공지사항 내용</div>
+                <div class="item">갤러리 내용</div>
+            </div>
+     </div>
+   </div>
+ 
+   <script>
+    $('.item').eq(0).show()
+
+    $('.titles h2').click(function(){
+        $('.titles h2').removeClass('active')
+        $(this).addClass('active')
+
+        $('.item').hide()
+        $('.item').eq($(this).index()).show()
+    })
+   </script>
+    
 </body>
 </html>

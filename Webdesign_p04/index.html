@@ -73,17 +73,17 @@
         <main class="contents">
             <div class="board">
                 <ul class="titles">
-                    <li><a href="#" class="notice">공지사항</a></li>       
-                    <li><a href="#" class="gellary">갤러리</a></li>       
+                    <li><a href="#" class="active">공지사항</a></li>       
+                    <li><a href="#" class=>갤러리</a></li>       
                 </ul>
                 <div class="list">
-                    <ul class="notice_list">
+                    <ul class="list_item">
                         <li><a href="#"><i class="xi-angle-right-min"></i>매혹적인 겨울의 패션을 만나보세요! 크리스마스 스타일링 매혹적인 겨울의 패션을 만나보세요!</a></li>
                         <li><a href="#"><i class="xi-angle-right-min"></i>가족과 함께하는 크리스마스를 위한 아름다운 장식품을 발견해보세요.</a></li>
                         <li><a href="#"><i class="xi-angle-right-min"></i>사랑하는 이에게크리스마스의 기쁨을 함께 나누세요. </a></li>
                         <li><a href="#"><i class="xi-angle-right-min"></i>맛있는 크리스마스 요리를 만들어보세요!</a></li>
                     </ul>
-                    <ul class="gellary_list">
+                    <ul class="list_item">
                         <img src="./images/갤러리 01.png" alt="갤러리01">
                         <img src="./images/갤러리 02.png" alt="갤러리01">
                         <img src="./images/갤러리 03.png" alt="갤러리01">
@@ -140,22 +140,6 @@
             $('.bbb').click(function(){
                 $(this).toggleClass('active')
             })
-
-            $('.gellary').click(
-                function(){
-                    $(this).toggleClass('active')
-                    $('.notice').removeClass('active')
-                    $('.gellary_list').show('ul')
-                    $('.notice_list').hide('ul')
-
-                }
-            )
-            $('.notice').click(
-                function(){
-                    $(this).toggleClass('active')
-                    $('.gellary').removeClass('active')
-                }
-            )
 
             $('.modal').click(
                 function(){
