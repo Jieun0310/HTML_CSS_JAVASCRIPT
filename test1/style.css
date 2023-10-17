@@ -101,7 +101,7 @@ body{
 .content{
     display: flex;
     margin: 12px 0;
-    /* gap: 10px; */
+    gap: 50px;
 }
 
 .content>div{
