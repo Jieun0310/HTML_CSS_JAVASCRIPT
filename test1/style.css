@@ -29,6 +29,8 @@ body{
     align-items: center;
     justify-content: space-between;
     padding: 0 20px;
+    
+
 }
 
 .logo img{
@@ -37,11 +39,14 @@ body{
 
 .gnb{
     display: flex;
+    position: relative;
+    z-index: 1;
 }
 
 
 .gnb > li{
     position: relative;
+    
 }
 
 .gnb > li > a{
@@ -56,18 +61,15 @@ body{
 }
 
 .gnb ul {
+    display: none;
     position: absolute;
     width: 100%;
     background-color: #c9c9c9;
-    
-    
 }
 
 .gnb ul li {
-    display: none;
     text-align: center;
-    padding: 20px 10px;
-   
+    padding: 20px 10px;   
 }
 
 .gnb ul li a{
@@ -94,7 +96,7 @@ body{
 }
 /* article */
 
-.contents{}
+
 
 .content{
     display: flex;
@@ -119,27 +121,34 @@ body{
     display: block;
     flex: 1;
     font-size: 14px;
-    width: 190px;
+    width: 180px;
     height: 48px;
     line-height: 48px;
     text-align: center;
     background-color: #b4b4b4;
 }
 
-.notice_list{
+.titles h2.active{
+    background-color: #333333;
+    color: #fff;
+}
+
+
+
+.list{
     margin: 10px;
 }
 
-.notice_list li a{
+.list li a{
     display: block;
     margin: 10px 0;
 }
 
-.gellary_list{
+.list{
     display: none;
 }
 
-.gellary_list img{
+.list img{
     display: inline-block;
     margin-right: 20px;
 }
@@ -178,16 +187,16 @@ body{
 }
 
 .popup{
-    /* display: none; */
+    display: none;
     width: 400px;
     height: 300px;
     border: 1px solid #494949;
     padding: 30px;
     background-color: #fff;
-    position: relative;
+    position: fixed;
     top: 50%;
     left: 50%;
-    transform: translate(-50%,-150%);
+    transform: translate(-50%,-50%);
 }
 
 .popup h2{
