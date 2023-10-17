@@ -1,0 +1,207 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+ul{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+    color: inherit;
+}
+
+body{
+    font-size: 14px;
+    background-color: #fff;
+    color: #333333;
+}
+
+.wrap{
+    width: 1200px;  
+    margin: 0 auto;
+}
+
+.header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+}
+
+.logo img{
+    display: block;
+}
+
+.gnb{
+    display: flex;
+}
+
+
+.gnb > li{
+    position: relative;
+}
+
+.gnb > li > a{
+    height: 100px;
+    line-height: 100px;
+    padding: 40px;
+}
+
+.gnb > li > a:hover{
+    background-color: #494949;
+    color: aliceblue;
+}
+
+.gnb ul {
+    position: absolute;
+    width: 100%;
+    background-color: #c9c9c9;
+    
+    
+}
+
+.gnb ul li {
+    display: none;
+    text-align: center;
+    padding: 20px 10px;
+   
+}
+
+.gnb ul li a{
+    display: block;
+}
+
+.gnb ul li:hover{
+    background-color: #adadad;
+}
+/* header */
+
+
+.slider{
+    overflow: hidden;
+}
+
+.slides{
+    display: flex;
+}
+
+.slide img{
+    display: block;
+    height: 300px;
+}
+/* article */
+
+.contents{}
+
+.content{
+    display: flex;
+    margin: 12px 0;
+    /* gap: 10px; */
+}
+
+.content>div{
+    flex: 1; 
+}
+
+.board{
+    height: 200px;
+}
+
+.titles{
+    display: flex;
+    gap: 4px;
+}
+
+.titles h2{
+    display: block;
+    flex: 1;
+    font-size: 14px;
+    width: 190px;
+    height: 48px;
+    line-height: 48px;
+    text-align: center;
+    background-color: #b4b4b4;
+}
+
+.notice_list{
+    margin: 10px;
+}
+
+.notice_list li a{
+    display: block;
+    margin: 10px 0;
+}
+
+.gellary_list{
+    display: none;
+}
+
+.gellary_list img{
+    display: inline-block;
+    margin-right: 20px;
+}
+
+/* main */
+
+.footer{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+    background-color: #adadad;
+    
+
+}
+
+.f_logo img{
+    display: block;
+}
+
+.sns{
+    display: flex;
+    gap: 12px;
+}
+
+.sns li a{
+    height: 100px;
+    line-height: 100px;
+    text-align: center;
+}
+
+.sns li a img{
+    width: 16px;
+    height: 16px;
+    margin-right: 6px;
+}
+
+.popup{
+    /* display: none; */
+    width: 400px;
+    height: 300px;
+    border: 1px solid #494949;
+    padding: 30px;
+    background-color: #fff;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-150%);
+}
+
+.popup h2{
+    display: block;
+}
+
+.popup p{
+    display: block;
+    padding: 10px 0;
+    line-height: 1.5;
+}
+
+button{
+    position: absolute;
+    top: 80%;
+    left: 80%; 
+}
