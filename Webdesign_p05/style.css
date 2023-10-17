@@ -1,0 +1,205 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+ul{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+    color: inherit;
+}
+
+body{
+    font-size: 14px;
+    font-weight: normal;
+}
+
+.wrap{
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 30px;
+}
+
+.logo img{
+    display: block;
+}
+
+.gnb{
+    display: flex;
+}
+.gnb>li{
+    position: relative;
+}
+.gnb>li>a{
+    display: block;
+    text-align: center;
+    height: 100px;
+    line-height: 100px;
+    padding: 0 30px;
+}
+
+.gnb>li>a:hover{
+    color: blue;
+}
+
+.gnb ul{
+    display: none;
+    position: absolute;
+    top: 100px;
+    left: 0;
+    width: 100%;
+}
+
+.gnb ul li a{
+    display: block;
+    text-align: center;
+    padding: 16px;
+    background-color: antiquewhite;   
+}
+
+.gnb ul li a:hover{
+    background-color: aliceblue;
+}
+
+.slider{
+    overflow: hidden;
+}
+
+/* article */
+.slides{
+    display: flex;
+}
+
+.slide{
+    display: block;
+}
+
+/* main */
+.contents{
+    display: flex;
+    gap: 24px;
+    margin: 23px 0;
+}
+
+.contents>div{
+    flex: 1;
+}
+
+.list{
+    display: flex;
+    gap: 4px;
+    border-bottom: 3px solid antiquewhite;
+}
+
+.list h2{
+    display: block;
+    flex: 1;
+    font-size: 14px;
+    text-align: center;
+    height: 48px;
+    line-height: 48px;
+    width: 180px;
+    background-color: antiquewhite;
+}
+
+.list h2:last-child{
+    background-color: rgb(240, 240, 240);
+}
+
+.list_item1{
+    margin: 10px;
+}
+
+.list_item1 li a{
+    display: block;
+    padding: 4px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    width: 340px;
+}
+
+.list_item1 li:hover{
+    text-decoration: underline;
+}
+
+.list_item1 li a::before{
+    content: '>';
+    margin-right: 2px;
+}
+
+
+.list_item2{
+    display: none;
+    width: 100%;
+   
+}
+
+.list_item2 img{
+    display: inline-block;
+    margin: 0 10px;
+}
+
+.banner img{
+    display: block;
+}
+
+.link ul{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px 10px;
+}
+
+.link ul li{
+    width: 184px;
+    text-align: center;
+    background-color: antiquewhite;
+    border-radius: 8px;
+} 
+
+.link ul li a{
+    line-height: 84px;
+    text-align: center;
+} 
+
+.link ul li:hover{
+    background-color: aliceblue;
+}
+
+.footer{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: rgb(207, 207, 207);
+    padding: 0 20px;
+}
+
+.footer .f_logo img{
+    display: block;
+}
+
+.footer .sns{
+    display: flex;
+    gap: 20px;
+    height: 80px;
+    line-height: 80px;
+}
+
+.footer .sns li a{
+    text-align: center;
+}
+
+.footer .sns li a:hover{
+    cursor: pointer;
+}
+
