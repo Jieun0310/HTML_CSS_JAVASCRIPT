@@ -14,7 +14,7 @@
             <ul class="gnb">
                 <li>
                     <a href="#">탑</a>
-                    <ul>
+                    <ul class="sub">
                         <li><a href="#">셔츠</a></li>
                         <li><a href="#">긴팔</a></li>
                         <li><a href="#">가디건</a></li>
@@ -23,7 +23,7 @@
                 </li>
                 <li>
                     <a href="#">아우터</a>
-                    <ul>
+                    <ul class="sub">
                         <li><a href="#">자켓</a></li>
                         <li><a href="#">가디건</a></li>
                         <li><a href="#">코트</a></li>
@@ -32,7 +32,7 @@
                 </li>
                 <li>
                     <a href="#">팬츠</a>
-                    <ul>
+                    <ul class="sub">
                         <li><a href="#">짧은바지</a></li>
                         <li><a href="#">긴 바지</a></li>
                         <li><a href="#">수영복</a></li>
@@ -41,7 +41,7 @@
                 </li>
                 <li>
                     <a href="#">악세서리</a>
-                    <ul>
+                    <ul class="sub">
                         <li><a href="#">목걸이</a></li>
                         <li><a href="#">반지</a></li>
                         <li><a href="#">팔찌</a></li>
@@ -106,9 +106,29 @@
     </div>
 </body>
 
-<SCript>
-    $('.')
-</SCript>
+<Script>
+    // gnb
+    $('.gnb').hover(
+        function(){
+            $('.sub').stop().slideDown(300)
+        },
+        function(){
+            $('.sub').stop().slideUp(300)
+        },
+    )
+
+    // slider
+    setInterval(function(){
+        $('.slides').animate({left:'-100%'},function(){
+            $('slide').first().appendTo('.slides')
+            $('.slides').css('left,0')
+        })
+    },3000)
+    
+
+
+
+</Script>
 
 
 </html>
