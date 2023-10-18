@@ -49,3 +49,76 @@ console.log(myname)
     console.log(subject)
 }
 
+// 4. 변수의 데이타 타입 - 자료형
+
+// 문자형 String 
+{
+    const name1 ='Alice'
+    const name2 ='alice'
+
+    console.log(name1, name2)
+
+    const firstName = 'jonh'
+    const lastName = 'Snow'
+    const fullName = firstName + ' ' + lastName
+
+    
+    console.log(fullName)
+    console.log(`${firstName}  ${lastName}`)
+}
+
+// 숫자형 Number
+{
+    const num = 10
+    const PI = 3.14
+
+    console.log(`값은 ${num}이고,타입은 ${typeof num}입니다.`)
+    console.log(`값은 ${PI}이고,타입은 ${typeof PI}입니다.`)
+    
+
+    const a = 1/0 
+    const b = -1/0 
+    const c = 'html'/10 
+
+
+    console.log(a)
+    console.log(b)
+    console.log(c)
+}
+
+// 불(불린, 불리언) Boolean
+{
+    const a = true
+    const b = false
+
+    const name='Alice'
+    const age='16'
+
+    console.log(name=='Alice')
+    console.log(age>20)
+}
+
+// null - 존재하지 않는 값 
+// undefined - 값이 할당되지 않음
+{
+    const fall = null
+    let winter
+
+}
+
+//5. 대화상자 alert, prompt, confirm 
+{
+    // const name = prompt('이름을 입력하세요', '예시) 영업팀')
+    // alert('안녕하세요, ${name}님,환영합니다.')
+    const isCheck = confirm('확인하였습니까?')
+    console.log(isCheck)
+}
+
+//6. 형변환
+{
+    const mathScore = prompt('수학점수는?')
+    const engScore= prompt('영어점수는?')
+
+    const score =(Number (mathScore)+ Number(engScore))/2
+    alert(score)
+}
