@@ -116,9 +116,9 @@ console.log(myname)
 
 //6. 형변환
 {
-    const mathScore = prompt('수학점수는?')
-    const engScore= prompt('영어점수는?')
+    // const mathScore = prompt('수학점수는?')
+    // const engScore= prompt('영어점수는?')
 
-    const score =(Number (mathScore)+ Number(engScore))/2
-    alert(score)
+    // const score =(Number (mathScore)+ Number(engScore))/2
+    // alert(score)
 }
