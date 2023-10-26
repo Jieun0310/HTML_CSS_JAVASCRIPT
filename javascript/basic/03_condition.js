@@ -39,23 +39,24 @@
 // }
 
 // 2. switch 문
-{
-    const site = prompt('네이버.구글,다음 중에서 즐겨사용하는 포털 사이트는?')
+// {
+//     const site = prompt('네이버.구글,다음 중에서 즐겨사용하는 포털 사이트는?')
 
-    switch (site ) {
-        case '네이버': 
-            url = 'https://naver.com'
-            break;
-        case '구글': 
-            url = 'https://google.com'
-            break;
-        case '다음': 
-            url = 'https://daum.net'
-            break;
+//     switch (site ) {
+//         case '네이버': 
+//             url = 'https://naver.com'
+//             break;
+//         case '구글': 
+//             url = 'https://google.com'
+//             break;
+//         case '다음': 
+//             url = 'https://daum.net'
+//             break;
     
-        default:
-            break;
-    }
+//         default:
+//             break;
+//     }
 
-    document.write(`<a href= ${url} target = '_blank'>${site}</a>`)
-}
+//     document.write(`<a href= ${url} target = '_blank'>${site}</a>`)
+// }
+
