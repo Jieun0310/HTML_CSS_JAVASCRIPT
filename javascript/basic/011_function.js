@@ -62,12 +62,12 @@
 // console.log(movie)
 
 // 6. return 
-function plus(a,b){
-    return a+b
-}
+// function plus(a,b){
+//     return a+b
+// }
 
-const result = plus(20,30) 
-console.log(result)
+// const result = plus(20,30) 
+// console.log(result)
 
 // 7. 화살표 함수
 
@@ -83,4 +83,6 @@ const add = (a, b) => a + b
 
 const sum = add(5,8)
 console.log(sum) 
+
+
 
