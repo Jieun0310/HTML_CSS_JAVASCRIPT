@@ -1,0 +1,73 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+ul{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+}
+
+body{
+    font-size: 14px;
+    color: #eee;
+    background-color: #222;
+}
+
+h1{
+    text-align: center;
+    margin: 20px 0;
+}
+
+.accordian{
+    width: 600px;
+    margin: 0 auto;
+}
+
+.accordian .content{
+    margin-bottom: 5px;
+}
+
+.accordian .content h2{
+    position: relative;
+    background-color: #444;
+    padding: 16px;
+    font-size: 16px;
+    font-weight: normal;
+}
+
+.accordian .content h2:hover{
+    background-color: #666;
+    cursor: pointer;
+}
+
+.accordian .content h2::after{
+    font-family: 'xeicon';
+    content: "\e913";
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);
+    right: 16px; 
+}
+
+.accordian .content p{
+    line-height: 1.6;
+    padding: 0 20px;
+    height: 0;
+    overflow: hidden;
+}
+
+.accordian .content.active p{
+    height: auto;
+    background-color: #333;
+    padding: 20px;
+    transition: all 0.3s;
+}
+.accordian .content.active h2::after{
+    content: "\e91f";
+}
