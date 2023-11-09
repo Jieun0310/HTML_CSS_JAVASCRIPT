@@ -50,3 +50,39 @@ const text = document.querySelector('.text')
 const prev = document.querySelector('.prev')
 const next = document.querySelector('.next')
 
+//초기화 함수 function init(){} init()
+
+// 초기 화면에 나오는 내용 설정 방법
+
+let current = 0
+
+next.addEventListener('click',function(){
+    current++ 
+    if(current > movies.length - 1) current = 0
+    showMovie(current)
+})
+
+prev.addEventListener('click',function(){
+    current--
+    if(current < 0) { 
+        current = movies.length - 1
+    }
+    showMovie(current)
+})
+
+function showMovie(current){
+    const item = movies[current]
+
+    poster.src = item.poster
+    num.textContent = item.id
+    title.textContent = item.title
+    director.textContent = item.director
+    text.textContent = item.text
+}
+
+function init() {    
+    showMovie(current)
+}
+
+init()
+    
