@@ -8,7 +8,6 @@
 //     localStorage.setItem('todos',json.strungify(todos))
 // }
 
-
 // function removeTodo(e){
 //     console.log(e)
 //     const li = e.target.parentNode
@@ -46,10 +45,9 @@
 //     input.value = ''
 // }
 
-
 // function loadTodo(){
 //     const loadedTodos = localStorage.getItem('todos')
-    
+
 //     if(loadedTodos !== null){
 //         const parseTodo = JSON. parse(loadedTodos)
 //         parseTodo.forEach(todo => paintTodo(todo.text))
@@ -65,64 +63,64 @@
 
 ////
 
-const form = document.querySelector('.todo_form')
-const input = form.querySelector('input')
-const ul = document.querySelector('.todo_list')
+const form = document.querySelector('.todo_form');
+const input = form.querySelector('input');
+const ul = document.querySelector('.todo_list');
 
-let todos = []
+let todos = [];
 
 function saveTodo() {
-    localStorage.setItem('todos', JSON.stringify(todos))
+  localStorage.setItem('todos', JSON.stringify(todos));
 }
 
 function removeTodo(e) {
-    const li = e.target.parentNode
-    li.remove()
-    const newTodos = todos.filter(todo => todo.id !== parseInt(li.id))
-    todos = newTodos
-    saveTodo()    
+  const li = e.target.parentNode;
+  li.remove();
+  const newTodos = todos.filter((todo) => todo.id !== parseInt(li.id));
+  todos = newTodos;
+  saveTodo();
 }
 
 function paintTodo(text) {
-    const li = document.createElement('li')
-    const span = document.createElement('span')
+  const li = document.createElement('li');
+  const span = document.createElement('span');
 
-    li.innerText = text
-    li.id = todos.length + 1
-    
-    span.innerText = 'x'
-    span.addEventListener('click', removeTodo)
+  li.innerText = text;
+  li.id = todos.length + 1;
 
-    li.appendChild(span)
-    ul.appendChild(li)
+  // span.innerText = 'x'
+  // span.addEventListener('click', removeTodo)
 
-    todos.push({
-        id: todos.length + 1,
-        text: text
-    })
+  li.appendChild(span);
+  ul.appendChild(li);
 
-    saveTodo()
+  todos.push({
+    id: todos.length + 1,
+    text: text,
+  });
+
+  saveTodo();
 }
 
 function handleSubmit(e) {
-    e.preventDefault()
-    if(input.value === '') return
-    paintTodo(input.value)
-    input.value = ''
+  e.preventDefault();
+  if (input.value === '') return;
+  paintTodo(input.value);
+  input.value = '';
 }
 
 function loadTodo() {
-    const loadTodos = localStorage.getItem('todos')
+  const loadTodos = localStorage.getItem('todos');
 
-    if(loadTodos !== null) {
-        const parseTodo = JSON.parse(loadTodos)
-        parseTodo.forEach(todo => paintTodo(todo.text))
-    }
+  if (loadTodos !== null) {
+    const parseTodo = JSON.parse(loadTodos);
+    parseTodo.forEach((todo) => paintTodo(todo.text));
+  }
 }
 
 function init() {
-    loadTodo()
-    form.addEventListener('submit', handleSubmit)
+  loadTodo();
+  form.addEventListener('submit', handleSubmit);
 }
 
-init()
+init();
